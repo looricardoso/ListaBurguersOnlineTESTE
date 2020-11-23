@@ -5,7 +5,7 @@ const iniciar = async () => {
     const result = await response.json();
 
     result.forEach(bg => {
-        lista.insertAdjacentHTML('beforeend', `<li>${bg.nome}</li>`)
+        tabela.insertAdjacentHTML('beforeend', `<li>${bg.nome}</li>`);
     });
 }
 
